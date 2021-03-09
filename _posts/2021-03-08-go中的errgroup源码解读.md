@@ -5,6 +5,7 @@ subtitle:   go中的errgroup是如何实现的？
 date:       2021-03-08
 author:     liz
 catalog:    true
+header-img: img/post_header_1.jpg
 tags:
     - go
 ---
