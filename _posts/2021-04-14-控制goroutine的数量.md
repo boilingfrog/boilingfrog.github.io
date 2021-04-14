@@ -2,7 +2,7 @@
 layout:     post
 title:      go中如何控制goroutine的数量
 subtitle:   go中如何控制goroutine的数量,goroutine的复用？
-date:       2021-04-02
+date:       2021-04-14
 author:     liz
 catalog:    true
 SEOTitle:   go中如何控制goroutine的数量
