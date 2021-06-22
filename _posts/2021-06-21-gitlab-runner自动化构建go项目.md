@@ -36,7 +36,7 @@ tags:
 
 通过docker-compose启动gitlab
 
-```go
+```
 version: '3'
 services:
   gitlab:
