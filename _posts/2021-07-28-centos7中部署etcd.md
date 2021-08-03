@@ -38,7 +38,7 @@ tags:
 
 这里放一个docker的安装脚本  
 
-```shell script
+```
 rm -rf /tmp/etcd-data.tmp && mkdir -p /tmp/etcd-data.tmp && \
   docker rmi quay.io/coreos/etcd:v3.5.0 || true && \
   docker run \
@@ -74,7 +74,7 @@ rm -rf /tmp/etcd-data.tmp && mkdir -p /tmp/etcd-data.tmp && \
 
 首先在每台机器中安装etcd,这里写了安装的脚本  
 
-```shell script
+```
 $ cat etcd.sh 
 
 ETCD_VER=v3.5.0
