@@ -1,6 +1,6 @@
 # Site settings
 title: boilingfrog'blog
-SEOTitle: boilingfrog的博客 | note
+SEOTitle: boilingfrog的博客
 header-img: img/header-shouye.jpg
 email:
 description: "Every failure is leading towards success."
@@ -78,7 +78,7 @@ ba_track_id: b50bf2b12b5338a1845e33832976fd6811
 
 # Google Analytics
 ga_track_id: 'UA-90855596-111'            # Format: UA-xxxxxx-xx
-ga_domain: boilingfrog.top111               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+ga_domain: auto               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
 
 
 
