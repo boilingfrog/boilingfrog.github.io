@@ -1,7 +1,7 @@
 # Site settings
 title: boilingfrog'blog
 SEOTitle: boilingfrog的博客
-header-img: img/header-shouye.jpg
+header-img: img/system/header-shouye.jpg
 email:
 description: "Every failure is leading towards success."
 keyword: "BY, note, boilingfrog的博客"
@@ -12,7 +12,7 @@ github_repo: "https://github.com/boilingfrog/boilingfrog.github.io.git" # you co
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Goals determine what you going to be!"
-sidebar-avatar: /img/about-myself.jpeg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/system/about-myself.jpeg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
