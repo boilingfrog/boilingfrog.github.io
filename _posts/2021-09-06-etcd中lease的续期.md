@@ -42,7 +42,7 @@ tags:
 
 这里放一个来自【etcd实战课程】的一张图片  
 
-<img src="/img/etcd-lease.png" alt="grpc" align=center/>
+<img src="/img/etcd/etcd-lease.png" alt="grpc" align=center/>
 
 来看下服务端中Lease中的几个主要函数  
 

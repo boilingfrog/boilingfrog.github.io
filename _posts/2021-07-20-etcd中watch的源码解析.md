@@ -45,7 +45,7 @@ etcd是一个cs网络架构，源码分析应该涉及到client端，server端�
 
 ### client端的代码  
 
-<img src="/img/etcd-watch-client.png" alt="etcd" align=center/>
+<img src="/img/etcd/etcd-watch-client.png" alt="etcd" align=center/>
 
 #### Watch
 
@@ -767,7 +767,7 @@ func (w *watchGrpcStream) serveSubstream(ws *watcherStream, resumec chan struct{
 6、grpc proxy提供对同一个key的多次watch合并减少etcd server中重复watcher创建，以提高etcd server稳定性。  
 
 
-<img src="/img/etcd-server.png" alt="etcd" align=center/>
+<img src="/img/etcd/etcd-server.png" alt="etcd" align=center/>
 
 #### watchableStore
 

@@ -59,7 +59,7 @@ etcd 是基于 raft 算法实现的，具体的实现可参见[etcd实现raft源
 
 先放一张 consul 的架构图  
 
-<img src="/img/etcd-consul.webp" alt="etcd" align=center/>
+<img src="/img/etcd/etcd-consul.webp" alt="etcd" align=center/>
 
 consul 使用的是 Gossip 协议  
 
@@ -101,7 +101,7 @@ ZooKeeper 的有点：
 
 再来看下 ZooKeeper 的架构图，图片摘自[etcd实战课](https://time.geekbang.org/column/article/351898)  
 
-<img src="/img/zookeeper.webp" alt="etcd" align=center/>  
+<img src="/img/etcd/zookeeper.webp" alt="etcd" align=center/>  
 
 ZooKeeper 集群中的所有机器通过一个 Leader 选举过程来选定一台称为 “Leader” 的机器，Leader 既可以为客户端提供写服务又能提供读服务。  
 
