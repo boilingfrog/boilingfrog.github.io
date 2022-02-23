@@ -112,7 +112,7 @@ Redis 中的底层数据结构，提供了压缩列表，这种是很节省内�
 
 ### 使用 Hash 来存储
 
-关于压缩列表的细节可参见[Redis中的压缩列表](https://www.cnblogs.com/ricklz/p/15839710.html#6%E5%8E%8B%E7%BC%A9%E5%88%97%E8%A1%A8)  
+关于压缩列表的细节可参见[Redis中的压缩列表](https://boilingfrog.github.io/2022/01/07/%E4%B8%BA%E4%BB%80%E4%B9%88redis%E7%9A%84%E6%9F%A5%E8%AF%A2%E6%AF%94%E8%BE%83%E5%BF%AB/#6%E5%8E%8B%E7%BC%A9%E5%88%97%E8%A1%A8)  
 
 <img src="/img/redis/redis-ziplist.png"  alt="redis" align="center" />
 
