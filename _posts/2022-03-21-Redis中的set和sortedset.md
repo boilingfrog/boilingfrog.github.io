@@ -663,7 +663,7 @@ typedef struct zskiplistNode {
 
 看上面的数据结构可以发现`sorted set`的实现主要使用了 dict 和 zskiplist 两种数据结构。不过`sorted set`在元素较少的情况下使用的压缩列表，具体细节参见下文的 zsetAdd 函数。   
 
-<img src="/img/golang/skip-table.jpeg"  alt="redis" align="center" />
+<img src="/img/redis/skip-table.jpeg"  alt="redis" align="center" />
 
 ##### ZADD
 
@@ -947,4 +947,6 @@ unsigned long zslGetRank(zskiplist *zsl, double score, sds ele) {
 【Redis设计与实现】https://book.douban.com/subject/25900156/    
 【redis 集合（set）类型的使用和应用场景】https://www.oraclejsq.com/redisjc/040101720.html    
 【跳跃表】https://redisbook.readthedocs.io/en/latest/internal-datastruct/skiplist.html    
+【Redis学习笔记】https://github.com/boilingfrog/Go-POINT/tree/master/redis  
+
 
