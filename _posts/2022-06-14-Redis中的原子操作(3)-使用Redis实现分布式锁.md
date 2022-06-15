@@ -189,7 +189,7 @@ func (r *Redis) Unlock(ctx context.Context, key, value string) (bool, error) {
 
 [redsync项目地址](https://github.com/go-redsync/redsync)
 
-```go
+```
 // LockContext locks m. In case it returns an error on failure, you may retry to acquire the lock by calling this method again.
 func (m *Mutex) LockContext(ctx context.Context) error {
 	if ctx == nil {
