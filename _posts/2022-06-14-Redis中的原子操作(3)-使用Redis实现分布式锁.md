@@ -74,7 +74,7 @@ func (r *Redis) TryLock(ctx context.Context, key, value string, expire time.Dura
 
 因为是用到了两个命令，这时候两个命令的组合使用是不能保障原子性的，在一些并发比较大的时候，需要配合使用 Lua 脚本来保证命令的原子性。
 
-```go
+```
 func tryLockScript() string {
 	script := `
 		local key = KEYS[1]
@@ -127,7 +127,7 @@ func (r *Redis) TryLock(ctx context.Context, key, value string, expire time.Dura
 
 看下代码实现
 
-```go
+```
 var UnLockErr = errors.New("未解锁成功")
 
 func unLockScript() string {
@@ -333,7 +333,7 @@ Redis 中分布式锁还有一个问题就是锁的续租问题，当锁的过�
 
 看下 redsync 中续租的实现
 
-```go
+```
 // Extend resets the mutex's expiry and returns the status of expiry extension.
 func (m *Mutex) Extend() (bool, error) {
 	return m.ExtendContext(nil)
