@@ -1,11 +1,11 @@
 ---
 layout:     post
-title:      k8s中的service如何实现负载均衡和服务发现
+title:      k8s中的service如何找到绑定的Pod以及如何实现Pod负载均衡
 subtitle:   k8s 中的 service 如何调度后面的 pod,如何实现负载均衡  
 date:       2022-10-16
 author:     liz
 catalog:    true
-SEOTitle:   k8s 中的 service 如何实现负载均衡和服务发现；k8s 中的 service 如何调度 pod
+SEOTitle:   k8s 中的 service 如何找到绑定的 Pod 以及如何实现 Pod 负载均衡；k8s 中的 service 如何调度 pod
 tags:
 - k8s
 ---
@@ -13,7 +13,7 @@ tags:
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [k8s 中如何进行 Pod 的调度](#k8s-%E4%B8%AD%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C-pod-%E7%9A%84%E8%B0%83%E5%BA%A6)
+- [k8s 中的 service 如何找到绑定的 Pod 以及如何实现 Pod 负载均衡](#k8s-%E4%B8%AD%E7%9A%84-service-%E5%A6%82%E4%BD%95%E6%89%BE%E5%88%B0%E7%BB%91%E5%AE%9A%E7%9A%84-pod-%E4%BB%A5%E5%8F%8A%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0-pod-%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1)
   - [前言](#%E5%89%8D%E8%A8%80)
   - [endpoint](#endpoint)
   - [kube-proxy](#kube-proxy)
@@ -29,7 +29,7 @@ tags:
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## k8s 中如何进行 Pod 的调度
+## k8s 中的 service 如何找到绑定的 Pod 以及如何实现 Pod 负载均衡
 
 ### 前言
 
